@@ -14,7 +14,7 @@
 
 ###
 
-<h5 align="left">1. ItemID: "Comprehensive item database for efficient inventory management, featuring ID mapping and organization."<br><br>2. wow: "Web development sandbox for experimentation and innovation, showcasing cutting-edge technologies and creative solutions."<br><br>3. Library: "Extensive collection of reusable resources, including code snippets, templates, and documentation for streamlined development."</p>
+<h5 align="left">— ItemID: "Comprehensive item database for efficient inventory management, featuring ID mapping and organization."<br><br>— Library: "Extensive collection of reusable resources, including code snippets, templates, and documentation for streamlined development."</p>
 
 ###
 
