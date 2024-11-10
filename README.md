@@ -1,5 +1,26 @@
-<div align="center">
-  <img height="300" src="https://github.com/starexxx/starexxx/blob/520d2481187ba8c12f1501b9eeeda5a43afead73/txt.png"  />
-</div>
+# About Me
 
-###
+```json
+
+  "name": "Ankit Mehta",
+  "know us": "Starexx"
+  "current_position": "Student & Developer",
+  "Languages": [
+    "HTML",
+    "Javascript",
+    "CSS",
+    "Python",
+  ],
+  "address": {
+    "country": "India",
+    "state": "Bihar",
+    "district": "Madhepura",
+  },
+  "hobbies": [
+    "Gamer",
+    "Web Developer",
+  ],
+  "contact_information": {
+    "email": "help.famshot.gmail.com"
+    "github": "https://github.com/starexxx"
+  }
