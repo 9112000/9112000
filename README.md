@@ -1,4 +1,4 @@
-# About Me
+### About Me
 
 ```json
 
@@ -22,5 +22,5 @@
   ],
   "contact_information": {
     "email": "help.famshot.gmail.com"
-    "github": "https://github.com/starexxx"
+    "telegram": "https://t.me/starexx7"
   }
