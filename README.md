@@ -25,7 +25,7 @@
     "telegram": "https://t.me/starexx7"
 }
 ```
-```py
+```
 no activity recorded in next year
 ```
 
