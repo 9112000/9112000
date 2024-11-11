@@ -3,9 +3,9 @@
 ```json
 
   "name": "Ankit Mehta",
-  "know us": "Starexx"
+  "know us": "Starexx",
   "current_position": "Student & Developer",
-  "Languages": [
+  "languages": [
     "HTML",
     "Javascript",
     "CSS",
@@ -21,6 +21,20 @@
     "Web Developer",
   ],
   "contact_information": {
-    "email": "help.famshot.gmail.com"
+    "email": "help.famshot.gmail.com",
     "telegram": "https://t.me/starexx7"
-  }
+}
+```
+
+
+
+
+
+| Repository                    | Status                     | Description                   | Upload Date       |
+| ----------------------------- | -------------------------- | ----------------------------- | ----------------- | 
+| Item Library                  | Public                     | Nothing to see here           | 2024-10 — 2026-10 |
+| Craftland                     | Public                     | Nothing to see here           | 2024-10 — 2026-10 |
+| FF Info Bot                   | Private                    | Nothing to see here           | 2024-12 — 2026-10 |
+| Website Downloader            | Private                    | Nothing to see here           | 2024-10 — 2026-10 |
+| Latest Craftland Json         | Public                     | Nothing to see here           | 2024-10 — 2026-10 |
+| Games                         | Public                     | Nothing to see here           | 2024-10 — 2026-10 |
