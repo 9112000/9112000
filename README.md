@@ -1,7 +1,5 @@
-<pre>About Me</pre>
 
 ```json
-
   "name": "Ankit Mehta",
   "know us": "Starexx",
   "current_position": "Student & Developer",
