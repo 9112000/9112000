@@ -9,17 +9,6 @@
     prismCSS.rel = "stylesheet";
     prismCSS.href = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css";
     document.head.appendChild(prismCSS);
-
-    // Inject custom background override
-    const style = document.createElement("style");
-    style.innerHTML = `
-      pre[class*="language-"],
-      code[class*="language-"] {
-        background: #111 !important;
-      }
-    `;
-    document.head.appendChild(style);
-}
     let btn = document.createElement("img");
     btn.src = "https://github.com/starexxx.png";
     btn.style = `
