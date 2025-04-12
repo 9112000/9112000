@@ -98,7 +98,7 @@
                     font-size: 14px;
                     font-weight: bold;
                     background: #1a1a1a;
-                    border-bottom: 1px solid #333;
+                    border-bottom: none;
                 `;
 
                 const navBar = document.createElement("div");
