@@ -1,13 +1,18 @@
-if (!document.querySelector("#prismjs")) {
-    let prismScript = document.createElement("script");
-    prismScript.src = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js";
-    prismScript.id = "prismjs";
-    document.head.appendChild(prismScript);
+(function () {
+    let isDragging = false, offsetX, offsetY, sourcePanel, copyBtn;
 
-    let prismCSS = document.createElement("link");
-    prismCSS.rel = "stylesheet";
-    prismCSS.href = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css";
-    document.head.appendChild(prismCSS);
+    if (!document.querySelector("#prismjs")) {
+        let prismScript = document.createElement("script");
+        prismScript.src = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js";
+        prismScript.id = "prismjs";
+        document.head.appendChild(prismScript);
+
+        let prismCSS = document.createElement("link");
+        prismCSS.rel = "stylesheet";
+        prismCSS.href = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css";
+        document.head.appendChild(prismCSS);
+    }
+
     let btn = document.createElement("img");
     btn.src = "https://github.com/starexxx.png";
     btn.style = `
@@ -161,7 +166,7 @@ if (!document.querySelector("#prismjs")) {
                     margin-bottom: 5px;
                 `;
                 const run = document.createElement("button");
-                run.innerText = "Run";
+                run.innerText = "Execute";
                 run.style = `
                     padding: 5px 10px;
                     background: transparent;
@@ -207,9 +212,9 @@ if (!document.querySelector("#prismjs")) {
                 copyBtn.innerText = "Copy";
                 copyBtn.style = `
                     position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    background: transparent;
+                    top: 80px;
+                    right: 15px;
+                    background: #111;
                     color: #fff;
                     border: none;
                     padding: 5px 10px;
@@ -218,8 +223,8 @@ if (!document.querySelector("#prismjs")) {
                 `;
                 copyBtn.onclick = () => {
                     navigator.clipboard.writeText(html);
-                    copyBtn.innerText = "Copied";
-                    setTimeout(() => (copyBtn.innerText = "Copy"), 2000);
+                    copyBtn.innerText = "✓";
+                    setTimeout(() => (copyBtn.innerText = "Copied"), 2000);
                 };
 
                 sourcePanel.append(header, navBar, contentArea, copyBtn);
