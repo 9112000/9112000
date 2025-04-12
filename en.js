@@ -1,5 +1,4 @@
-(function () {
-    if (!document.querySelector("#prismjs")) {
+if (!document.querySelector("#prismjs")) {
     let prismScript = document.createElement("script");
     prismScript.src = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js";
     prismScript.id = "prismjs";
