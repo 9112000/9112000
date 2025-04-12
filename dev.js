@@ -12,14 +12,14 @@
         document.head.appendChild(prismCSS);
     }
     let btn = document.createElement("img");
-    btn.src = "https://raw.githubusercontent.com/starexxx/starexxx/9aaa238b762373ed0e220ab241535f6361a58bb9/IMG_20250208_18433807.jpeg";
+    btn.src = "https://github.com/starexxx.png";
     btn.style.position = "fixed";
     btn.style.bottom = "20px";
     btn.style.right = "20px";
-    btn.style.width = "50px";
-    btn.style.height = "50px";
+    btn.style.width = "40px";
+    btn.style.height = "40px";
     btn.style.cursor = "grab";
-    btn.style.borderRadius = "50%";
+    btn.style.borderRadius = "30%";
     btn.style.zIndex = "10000";
     btn.draggable = false;
     function startDrag(e) {
@@ -114,7 +114,6 @@
                 code.className = "language-html";
                 code.textContent = html;
                 pre.appendChild(code);
-
                 sourcePopup.appendChild(copyBtn);
                 sourcePopup.appendChild(pre);
                 document.body.appendChild(sourcePopup);
