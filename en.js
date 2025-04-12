@@ -79,7 +79,7 @@
                     left: 0;
                     width: 100%;
                     height: 50%;
-                    background: #0f0f0f;
+                    background: transparent;
                     color: white;
                     z-index: 9999;
                     display: flex;
