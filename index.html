@@ -61,6 +61,7 @@
       border-radius: 50px;
       padding: 4px;
       margin-bottom: 25px;
+      margin-top: 5px;
       position: relative;
       box-shadow: none;
     }
@@ -85,7 +86,7 @@
       background: #fff;
       transition: all 0.5s cubic-bezier(0.28, 0, 0.21, 1);
       top: 4px;
-      left: 4px;
+      left: 1px;
       box-shadow: none;
     }
     body.posts-active .nav-pills {
@@ -124,10 +125,10 @@
       backdrop-filter: blur(5px);
     }
     .link:hover {
-      transform: translateY(-2px);
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      background-color: #43e660;
-      color: white;
+      background-color: rgba(255,255,255,0.8);
+      opacity: 30%;
+      color: 333;
     }
     .posts {
       display: flex;
@@ -190,7 +191,6 @@
     <div class="profile">
       <img src="https://github.com/starexxx.png" alt="Starexx Profile Picture" class="profile-img">
       <h1>Starexx</h1>
-      <p class="bio">Philosopher, AI Expert, Web Developer and Programmer</p>
       <div class="nav-pills">
         <div class="nav-pill active" data-tab="links">Links</div>
         <div class="nav-pill" data-tab="posts">Posts</div>
@@ -216,21 +216,16 @@
         <article class="post">
           <div class="post-title">My top Websites</div>
           <div class="post-date">May 4, 2025</div>
-          <div class="post-content"><b>Heres are list of my sites:</b><br>
-              starexxai.vercel.app/<br>
-              niggapi-tester.vercel.app<br>
-              freefiresearch.vercel.app<br>
-              starexx.vercel.app/<br>
-              starexxx.github.io/KellyRunner/<br>
-              starexxx.github.io/Emotes/<br>
-              starexxx.github.io/FFItems/<br>
-              starexxlabs.vercel.app              
+          <div class="post-content">Here are the sites: (Tap to View)<br>
+            <a href="https://starexxai.vercel.app/">Starexx AI</a><br>
+            <a href="https://niggapi-tester.vercel.app">API Tester</a><br>
+            <a href="https://freefiresearch.vercel.app">Free Fire Search</a><br>
+            <a href="https://starexx.vercel.app/">Starexx Videos</a><br>
+            <a href="https://starexxx.github.io/KellyRunner/">KellyRunner</a><br>
+            <a href="https://starexxx.github.io/Emotes/">Emotes</a><br>
+            <a href="https://starexxx.github.io/FFItems/">FFItems</a><br>
+            <a href="https://starexxlabs.vercel.app">Starexx Labs</a>      
           </div>
-        </article>
-        <article class="post">
-          <div class="post-title">Starexx Links</div>
-          <div class="post-date">Project Source</div>
-          <div class="post-content">This project released under MIT License, <a href="https://github.com/starexxx/starexxx/tree/main" target="_blank" rel="noopener noreferrer">View Source</a></div>
         </article>
       </div>
     </div>
@@ -286,4 +281,4 @@
     });
   </script>
 </body>
-        </html>
+</html>
