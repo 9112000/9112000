@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankit Mehta | GitHub</title>
+    <title>GitHub Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
     <style>
@@ -53,9 +53,6 @@
             font-size: 1rem;
             font-weight: 600;
             color: var(--black);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
         .nav-buttons {
             display: flex;
@@ -75,25 +72,13 @@
             display: flex;
             align-items: center;
         }
-        .nav-btn:hover {
-            color: var(--black);
-        }
         .nav-btn.active {
             color: var(--black);
             font-weight: 600;
         }
-        .nav-btn.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0.75rem;
-            right: 0.75rem;
-            height: 2px;
-            background: none;
-        }
         main {
             padding: 1rem 0;
-            min-height: calc(100vh - 56px - 50px);
+            min-height: calc(100vh - 56px);
         }
         .section {
             display: none;
@@ -106,12 +91,10 @@
             text-align: center;
             color: var(--gray);
         }
-        /* About Section */
         .about-container {
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            margin-bottom: 1rem;
         }
         @media (min-width: 768px) {
             .about-container {
@@ -128,7 +111,6 @@
         @media (min-width: 768px) {
             .profile-card {
                 flex: 1;
-                padding: 1.5rem;
             }
         }
         .profile-header {
@@ -144,20 +126,9 @@
             object-fit: cover;
             border: 1px solid var(--border);
         }
-        @media (min-width: 768px) {
-            .profile-image {
-                width: 80px;
-                height: 80px;
-            }
-        }
         .profile-info h1 {
             font-size: 1.25rem;
             margin-bottom: 0.25rem;
-        }
-        @media (min-width: 768px) {
-            .profile-info h1 {
-                font-size: 1.5rem;
-            }
         }
         .profile-info p {
             color: var(--gray);
@@ -169,12 +140,6 @@
             gap: 0.75rem;
             margin-top: 1rem;
         }
-        @media (min-width: 768px) {
-            .stats-grid {
-                gap: 1rem;
-                margin-top: 1.5rem;
-            }
-        }
         .stat-card {
             background: var(--light-gray);
             border: 1px solid var(--border);
@@ -182,21 +147,11 @@
             padding: 0.75rem;
             text-align: center;
         }
-        @media (min-width: 768px) {
-            .stat-card {
-                padding: 1rem;
-            }
-        }
         .stat-number {
             font-size: 1rem;
             font-weight: 600;
-            color: black;
+            color: var(--black);
             margin-bottom: 0.25rem;
-        }
-        @media (min-width: 768px) {
-            .stat-number {
-                font-size: 1.25rem;
-            }
         }
         .stat-label {
             font-size: 0.8rem;
@@ -211,10 +166,8 @@
         @media (min-width: 768px) {
             .readme-card {
                 flex: 2;
-                padding: 1.5rem;
             }
         }
-        /* Projects Section */
         .repo-tree-container {
             border: 1px solid var(--border);
             border-radius: 6px;
@@ -225,7 +178,6 @@
             background: var(--light-gray);
             border-bottom: 1px solid var(--border);
             font-weight: 600;
-            font-size: 0.9rem;
         }
         .combined-tree {
             background: var(--white);
@@ -236,23 +188,10 @@
             max-height: 60vh;
             overflow-y: auto;
         }
-        @media (min-width: 768px) {
-            .combined-tree {
-                padding: 1rem;
-                font-size: 0.85rem;
-                max-height: 600px;
-            }
-        }
         .repo-name {
             font-weight: 600;
             margin: 0.5rem 0;
             color: var(--black);
-            font-size: 0.9rem;
-        }
-        @media (min-width: 768px) {
-            .repo-name {
-                font-size: 1rem;
-            }
         }
         .tree-item {
             display: flex;
@@ -267,7 +206,6 @@
             white-space: pre;
             color: var(--gray);
         }
-        /* Modal */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -318,8 +256,6 @@
             color: var(--gray);
             cursor: pointer;
             font-size: 1.1rem;
-            flex-shrink: 0;
-            margin-left: 0.5rem;
         }
         .modal-toolbar {
             padding: 0.5rem 1rem;
@@ -334,7 +270,6 @@
             border-radius: 4px;
             font-size: 0.8rem;
             cursor: pointer;
-            white-space: nowrap;
         }
         .modal-content {
             flex: 1;
@@ -350,11 +285,6 @@
             font-size: 0.8rem;
             width: 100%;
             overflow-x: auto;
-        }
-        @media (min-width: 768px) {
-            .hljs {
-                font-size: 0.85rem;
-            }
         }
         .image-preview {
             max-width: 100%;
@@ -375,7 +305,7 @@
 <body>
     <header>
         <div class="header-row">
-            <div class="name"><span id="header-name">Loading...</span></div>
+            <div class="name"><span id="header-name">GitHub Portfolio</span></div>
             <div class="nav-buttons">
                 <button class="nav-btn active" id="about-btn">About</button>
                 <button class="nav-btn" id="projects-btn">Projects</button>
@@ -422,7 +352,7 @@
         
         <section class="section" id="projects-section">
             <div class="repo-tree-container">
-                <div class="repo-tree-header">Repository</div>
+                <div class="repo-tree-header">Repository Structure</div>
                 <div class="combined-tree" id="combined-tree">
                     <div class="loading">
                         <i class="fas fa-spinner fa-spin"></i> Loading repositories...
@@ -454,7 +384,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.12/marked.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const username = 'starexxx';
+            // Get username from URL parameter or use default
+            const urlParams = new URLSearchParams(window.location.search);
+            const username = urlParams.get('x') || 'starexxx';
+            
             const aboutBtn = document.getElementById('about-btn');
             const projectsBtn = document.getElementById('projects-btn');
             const aboutSection = document.getElementById('about-section');
