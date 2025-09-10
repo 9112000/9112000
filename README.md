@@ -1,6 +1,4 @@
-
-**About Me**: 
-Passionate full-stack developer with expertise in building modern web applications using Python and JavaScript ecosystems. Skilled in creating efficient solutions with clean code architecture. Currently pursuing Computer Science education while actively developing projects across frontend and backend technologies.
+I am a passionate developer who builds modern web applications using Python and JavaScript. I focus on writing clean code and creating efficient solutions, and I enjoy working on both frontend and backend projects.
 <br>
 <br>
 <br>
